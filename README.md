@@ -16,6 +16,30 @@
             <li><a href="#sculptures">Sculptures</a></li>
         </ul>
     </nav>
+    
+    <!-- Sections corresponding to Navigation -->
+    <section id="exhibitions">
+        <h2>Exhibitions</h2>
+        <p>Content about exhibitions goes here...</p>
+    </section>
+
+    <section id="paintings">
+        <h2>Paintings</h2>
+        <p>Content about paintings goes here...</p>
+    </section>
+
+    <section id="drawings">
+        <h2>Drawings</h2>
+        <p>Content about drawings goes here...</p>
+    </section>
+
+    <section id="sculptures">
+        <h2>Sculptures</h2>
+        <p>Content about sculptures goes here...</p>
+    </section>
+
+</body>
+</html>
 
     <!-- Main Content -->
     <header class="hero">

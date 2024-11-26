@@ -38,9 +38,6 @@
         <p>Content about sculptures goes here...</p>
     </section>
 
-</body>
-</html>
-
     <!-- Main Content -->
     <header class="hero">
         <div class="hero-content">

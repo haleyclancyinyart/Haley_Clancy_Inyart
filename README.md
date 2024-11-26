@@ -21,7 +21,7 @@
     <header class="hero">
         <div class="hero-content">
             <h1>Haley Clancy Inyart</h1>
-            <p>Explore my creative journey through art and design.</p>
+            <p></p>
         </div>
     </header>
 

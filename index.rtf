@@ -21,7 +21,7 @@
     <section id="exhibitions">
         <h2>Exhibitions</h2>
         <p>Content about exhibitions goes here...</p>
-        <img src="images/artwork1.jpg" alt="Exhibition Image" class="exhibition-image">
+        <img src="artwork1.jpg" alt="Exhibition Image" class="exhibition-image">
     </section>
 
     <section id="paintings">

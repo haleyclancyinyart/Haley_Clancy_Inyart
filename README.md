@@ -11,7 +11,7 @@ Haley Clancy Inyart holds an MFA in Drawing from the University of Arkansas and 
 - **Drawings**: A collection of Haley's drawings.
 - **Sculptures**: An exhibition of her sculptures.
 
-![Alt Text](artwork1.jpg)
+![Alt Text](artwork11.jpg)
 
 ## Contact
 

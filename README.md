@@ -20,7 +20,7 @@ Haley Clancy Inyart holds an MFA in Drawing from the University of Arkansas and 
 
 
 
-Email: [your-email@example.com](mailto:haleyclancyinyart@gmail.com)
+Email: [haleyclancyinyart@gmail.com](mailto:haleyclancyinyart@gmail.com)
 
 
 

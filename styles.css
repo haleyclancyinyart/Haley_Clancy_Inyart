@@ -94,7 +94,7 @@ nav ul li a:hover {
 
 /* Footer link styles */
 footer a, a[href^="mailto:"] {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 

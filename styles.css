@@ -25,10 +25,12 @@ h1, h2 {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
-    margin: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;  /* Centers the image horizontally */
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {

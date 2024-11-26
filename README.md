@@ -1,50 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haley Clancy Inyart</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navigation Section -->
-    <nav>
-        <ul>
-            <li><a href="exhibitions.html">Exhibitions</a></li>
-            <li><a href="paintings.html">Paintings</a></li>
-            <li><a href="drawings.html">Drawings</a></li>
-            <li><a href="sculptures.html">Sculptures</a></li>
-        </ul>
-    </nav>
+# Haley Clancy Inyart Portfolio
 
-    <!-- Main Content -->
-    <section id="exhibitions">
-        <h2>Exhibitions</h2>
-        <p>Content about exhibitions goes here...</p>
-        <img src="artwork1.jpg" alt="Exhibition Image" class="exhibition-image">
-    </section>
+## Overview
 
-    <section id="paintings">
-        <h2>Paintings</h2>
-        <p>Content about paintings goes here...</p>
-    </section>
+Haley Clancy Inyart holds an MFA in Drawing from the University of Arkansas and a BFA in Drawing from Southern Illinois University Edwardsville. Her work has been included in numerous group, juried, and invitational exhibitions across the United States. Recent solo exhibitions include:
 
-    <section id="drawings">
-        <h2>Drawings</h2>
-        <p>Content about drawings goes here...</p>
-    </section>
+- 211 South Gallery in Bentonville, AR
+- Wild Arts Collective in New Paltz, NY
+- Dayman Art Gallery in Owensboro, KY
 
-    <section id="sculptures">
-        <h2>Sculptures</h2>
-        <p>Content about sculptures goes here...</p>
-    </section>
+## Sections
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Haley Clancy Inyart</p>
-    </footer>
-</body>
-</html>
+- **Exhibitions**: A section featuring images and information about past and upcoming exhibitions.
+- **Paintings**: A gallery showcasing various paintings.
+- **Drawings**: A collection of Haley's drawings.
+- **Sculptures**: An exhibition of her sculptures.
+
+
+## Contact
+
+
+
+Email: [your-email@example.com](mailto:haleyclancyinyart@gmail.com)
 
 
 

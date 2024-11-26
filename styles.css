@@ -5,53 +5,112 @@
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title></title>\
-    <link rel="stylesheet" href="styles.css">\
-</head>\
-<body>\
-    <!-- Header Section -->\
-    <header>\
+\f0\fs24 \cf0 /* General Styles */\
+body \{\
+    font-family: Arial, sans-serif;\
+    line-height: 1.6;\
+    margin: 0;\
+    padding: 0;\
+    background-color: #f4f4f4;\
+    color: #333;\
+\}\
 \
-    <!-- Navigation Section -->\
- <nav>\
-    <ul>\
-        <li><a href="#exhibitions">Exhibitions</a></li>\
-        <li><a href="#paintings">Paintings</a></li>\
-        <li><a href="#drawings">Drawings</a></li>\
-        <li><a href="#sculptures">Sculptures</a></li>\
-    </ul>\
-</nav>\
+header \{\
+    background: #007bff;\
+    color: white;\
+    text-align: center;\
+    padding: 20px 0;\
+\}\
 \
-    <!-- Main Content -->\
-    <section id="exhibitions">\
-        <h2>Exhibitions</h2>\
-        <p>Content about exhibitions goes here...</p>\
-        <img src="artwork11.jpg" alt="Exhibition Image" class="exhibition-image">\
-    </section>\
+section \{\
+    padding: 20px;\
+    text-align: center;\
+\}\
 \
-    <section id="paintings">\
-        <h2>Paintings</h2>\
-        <p>Content about paintings goes here...</p>\
-    </section>\
+h1, h2 \{\
+    color: #333;\
+\}\
 \
-    <section id="drawings">\
-        <h2>Drawings</h2>\
-        <p>Content about drawings goes here...</p>\
-    </section>\
+img \{\
+    max-width: 100%;\
+    height: auto;\
+    border: 2px solid #ddd;\
+    margin: 10px;\
+\}\
 \
-    <section id="sculptures">\
-        <h2>Sculptures</h2>\
-        <p>Content about sculptures goes here...</p>\
-    </section>\
-\
-    <!-- Footer -->\
-    <footer>\
-        <p>&copy; 2024 Haley Clancy Inyart</p>\
-    </footer>\
-</body>\
-</html>}
+footer \{\
+    background: #333;\
+    color: white;\
+    text-align: center;\
+    padding: 10px 0;\
+\}\
+}
+/* Style for the button */
+.my-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Padding around the text */
+    text-align: center; /* Center text inside the button */
+    text-decoration: none; /* Remove underline from links (if used) */
+    display: inline-block; /* Align the button inline with other elements */
+    font-size: 16px; /* Font size of the text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to a pointer when hovering over button */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for the button */
+.my-button:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Example styles for the exhibition image */
+.exhibition-image {
+    width: 100%; /* Makes the image fill the width of the container */
+    max-width: 800px; /* Limits the maximum width */
+    margin: 20px 0; /* Adds space above and below the image */
+    display: block; /* Ensures the image is displayed as a block-level element */
+    border-radius: 8px; /* Optional: rounds the corners of the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow to the image */
+}
+
+a[href="/Haley_Clancy_Inyart] {
+    display: none;
+}
+nav ul {
+    list-style-type: none; /* Removes the bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+nav ul li {
+    display: inline; /* Makes the list items horizontal */
+    margin-right: 15px; /* Adds spacing between items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #000; /* Sets the color of the links (customize as needed) */
+}
+html {
+    scroll-behavior: smooth;
+}
+nav ul {
+    list-style-type: none; /* Removes the bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+nav ul li {
+    display: inline; /* Aligns items horizontally */
+    margin-right: 15px; /* Adds spacing between items */
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+footer a, a[href^="mailto:"] {
+    color: black;
+    text-decoration: none;
+}

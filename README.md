@@ -1,32 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haley Clancy Inyart - Portfolio</title>
+    <title>Haley Clancy Inyart</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation Section -->
     <nav>
         <ul>
-            <li><a href="#exhibitions">Exhibitions</a></li>
-            <li><a href="#paintings">Paintings</a></li>
-            <li><a href="#drawings">Drawings</a></li>
-            <li><a href="#sculptures">Sculptures</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="paintings.html">Paintings</a></li>
+            <li><a href="drawings.html">Drawings</a></li>
+            <li><a href="sculptures.html">Sculptures</a></li>
         </ul>
     </nav>
 
-       <!-- Exhibitions Section -->
-    <section id="exhibitions" class="exhibitions">
-        <h2>Exhibitions</h2>
-        <p>Haley Clancy Inyart received her MFA in Drawing from the University of Arkansas - Fayetteville and her BFA in Drawing at Southern Illinois University Edwardsville. Haley has been included in many group, juried and invitational exhibitions across the United States and recent solo exhibitions include: 211 South Gallery in Bentonville, AR, Wild Arts Collective in New Paltz, NY and Dayman Art Gallery in Owensboro, KY.include:</p>
-
-        <html lang="en">
-    
-    <!-- Sections corresponding to Navigation -->
+    <!-- Main Content -->
     <section id="exhibitions">
         <h2>Exhibitions</h2>
         <p>Content about exhibitions goes here...</p>
+        <img src="images/artwork1.jpg" alt="Exhibition Image" class="exhibition-image">
     </section>
 
     <section id="paintings">
@@ -44,14 +39,9 @@
         <p>Content about sculptures goes here...</p>
     </section>
 
-    <!-- Main Content -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Haley Clancy Inyart</h1>
-            <p></p>
-        </div>
-    </header>
-   
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Haley Clancy Inyart</p>
     </footer>
 </body>
 </html>

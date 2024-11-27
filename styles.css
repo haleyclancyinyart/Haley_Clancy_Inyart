@@ -287,3 +287,19 @@ img {
     color: white;
     cursor: pointer;
 }
+/* Resume button styling */
+.resume-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}

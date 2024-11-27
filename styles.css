@@ -255,3 +255,35 @@ img {
     display: block; /* Removes extra spacing below images */
     margin: 0 auto; /* Centers the image horizontally if needed */
 }
+/* Lightbox container (hidden by default) */
+.lightbox {
+    display: none; /* Hidden initially */
+    position: fixed; 
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lightbox image */
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button */
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}

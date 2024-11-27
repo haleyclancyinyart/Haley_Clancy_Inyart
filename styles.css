@@ -303,3 +303,10 @@ img {
     background-color: #555;
     transform: scale(1.05);
 }
+img {
+    max-height: 500px; /* Set your desired maximum height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within the bounding box */
+    display: block; /* Center the image within its container */
+    margin: 0 auto; /* Optional: center horizontally */
+}

@@ -243,3 +243,7 @@ img.no-border {
     max-width: 100%;
     height: auto;
     border: none;
+}
+.gallery {
+    width: 100%; /* Full width of the page or parent container */
+    margin: 0 auto; /* Centers the gallery if it has a fixed width */

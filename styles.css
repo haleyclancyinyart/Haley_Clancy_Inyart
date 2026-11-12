@@ -61,7 +61,7 @@ section {
     text-align: center;
 }
 
-/* Images */
+/* General Images */
 img {
     max-height: 500px;
     width: auto;
@@ -79,29 +79,33 @@ img {
     display: block;
 }
 
-/* Gallery Section */
+/* Seamless 3-Column Square Gallery Grid */
 .gallery {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
     width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .gallery img {
-    width: 300px;
+    width: 100%;
     height: auto;
+    max-height: none;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
     margin: 0;
 }
 
 /* Zoomable & Lightbox Styles */
-.gallery img, img.zoomable {
+.gallery img, .exhibition-image, img.zoomable {
     cursor: zoom-in;
     transition: opacity 0.2s ease;
 }
 
-.gallery img:hover, img.zoomable:hover {
+.gallery img:hover, .exhibition-image:hover, img.zoomable:hover {
     opacity: 0.9;
 }
 
@@ -143,6 +147,11 @@ img {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
+}
+
+.my-button:hover {
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
 }
 
 .resume-button {
@@ -187,5 +196,9 @@ footer a:hover, footer a[href^="mailto:"]:hover {
 
     .my-button {
         width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
     }
 }

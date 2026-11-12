@@ -32,5 +32,35 @@
         </div>
     </section>
 
+    <!-- Lightbox container -->
+    <div id="lightbox" class="lightbox">
+        <img id="lightbox-img" src="" alt="Expanded artwork">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        // Open lightbox when any gallery or zoomable image is clicked
+        document.querySelectorAll('.gallery img, img.zoomable').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+            });
+        });
+
+        // Close lightbox when clicking anywhere on the overlay
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        // Close lightbox with the Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>

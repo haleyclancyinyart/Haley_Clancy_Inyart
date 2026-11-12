@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 /* General Styles */
 body {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -29,7 +31,6 @@ img {
     max-width: 800px;
     margin: 20px auto;
     display: block;
-    border-radius: 8px;
 }
 
 footer {
@@ -47,6 +48,7 @@ footer {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     border: none;
     border-radius: 4px;
@@ -65,7 +67,6 @@ footer {
     max-width: 800px;
     margin: 20px auto;
     display: block;
-    border-radius: 8px;
 }
 
 /* Navigation styles */
@@ -114,7 +115,7 @@ footer a:hover, footer a[href^="mailto:"]:hover {
 
 /* General Styles */
 body {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -150,12 +151,11 @@ h1, h2 {
     width: 100%;
     max-width: 300px;
     height: auto;
-    border-radius: 8px;
 }
 
 /* General Styles */
 body {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -215,7 +215,6 @@ section {
     width: 100%;
     max-width: 300px;
     height: auto;
-    border-radius: 8px;
 }
 
 /* Gallery section */
@@ -229,7 +228,6 @@ section {
 .gallery img {
     width: 300px;
     height: auto;
-    border-radius: 8px;
 }
 
 img {
@@ -279,39 +277,4 @@ img {
     object-fit: contain; /* Ensure the image fits within the bounding box */
     display: block; /* Center the image within its container */
     margin: 0 auto; /* Optional: center horizontally */
-}
-/* Make gallery images show a zoom cursor */
-.gallery img {
-    cursor: zoom-in;
-    transition: opacity 0.2s ease;
-}
-
-.gallery img:hover {
-    opacity: 0.9;
-}
-
-/* Lightbox overlay */
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.85);
-    justify-content: center;
-    align-items: center;
-    cursor: zoom-out;
-    padding: 20px;
-}
-
-.lightbox.active {
-    display: flex;
-}
-
-.lightbox img {
-    max-width: 90vw;
-    max-height: 90vh;
-    width: auto;
-    height: auto;
-    border-radius: 4px;
-    margin: 0;
 }

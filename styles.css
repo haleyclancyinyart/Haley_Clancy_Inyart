@@ -280,3 +280,38 @@ img {
     display: block; /* Center the image within its container */
     margin: 0 auto; /* Optional: center horizontally */
 }
+/* Make gallery images show a zoom cursor */
+.gallery img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+}
+
+.gallery img:hover {
+    opacity: 0.9;
+}
+
+/* Lightbox overlay */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+    padding: 20px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    margin: 0;
+}

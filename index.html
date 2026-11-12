@@ -15,7 +15,7 @@
 
     <!-- Navigation Section -->
     <nav>
-       <ul>
+        <ul>
             <li><a href="exhibitions.html">Exhibitions</a></li>
             <li><a href="paintings.html">Paintings</a></li>
             <li><a href="drawings.html">Drawings</a></li>
@@ -25,55 +25,56 @@
 
     <!-- Image Section -->
     <section>
-        <h3></h3>
-        <img src="artwork11.jpg" alt="Artwork 11" width="600">
+        <img src="artwork11.jpg" alt="Artwork 11" width="600" class="zoomable">
     </section>
-     <section>
+
+    <section>
         <p>Haley Clancy Inyart holds an MFA in Drawing from the University of Arkansas and a BFA in Drawing from Southern Illinois University Edwardsville. Her work has been included in numerous group, juried, and invitational exhibitions across the United States. Recent solo exhibitions include: 211 South Gallery in Bentonville, AR, Wild Arts Collective in New Paltz, NY & The William and Florence Schmidt Art Center in Belleville, IL.</p>
     </section>
-    </body>
-    </html>
+
     <!-- Resume Section -->
     <section id="CV" style="text-align: center; padding: 40px;">
-    <a href="Inyart_Haley_CV3.pdf" target="_blank" class="View CV">View CV</a>
+        <a href="Inyart_Haley_CV3.pdf" target="_blank" class="resume-button">View CV</a>
         <p><a href="mailto:haleyclancyinyart@gmail.com">haleyclancyinyart@gmail.com</a></p>
     </section>
 
-<!-- Lightbox container -->
-<div id="lightbox" class="lightbox">
-    <img id="lightbox-img" src="" alt="Expanded artwork">
-</div>
-
-<script>
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-
-    // Open lightbox when any gallery image is clicked
-    document.querySelectorAll('.gallery img').forEach(img => {
-        img.addEventListener('click', () => {
-            lightboxImg.src = img.src;
-            lightboxImg.alt = img.alt;
-            lightbox.classList.add('active');
-        });
-    });
-
-    // Close lightbox when clicking anywhere on the overlay
-    lightbox.addEventListener('click', () => {
-        lightbox.classList.remove('active');
-    });
-
-    // Close lightbox with the Escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            lightbox.classList.remove('active');
-        }
-    });
-</script>
-
     <!-- Footer -->
     <footer>
-    <a href="https://www.instagram.com/hales_ci/" target="_blank">
-        <img src="instagram-icon.png" alt="Instagram" style="width: 30px; height: 30px;">
-    </a>
+        <a href="https://www.instagram.com/hales_ci/" target="_blank">
+            <img src="instagram-icon.png" alt="Instagram" style="width: 30px; height: 30px;">
+        </a>
         <p>&copy; 2026 Haley Clancy Inyart</p>
     </footer>
+
+    <!-- Lightbox container -->
+    <div id="lightbox" class="lightbox">
+        <img id="lightbox-img" src="" alt="Expanded artwork">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        // Open lightbox when any gallery or zoomable image is clicked
+        document.querySelectorAll('.gallery img, img.zoomable').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+            });
+        });
+
+        // Close lightbox when clicking anywhere on the overlay
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        // Close lightbox with the Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

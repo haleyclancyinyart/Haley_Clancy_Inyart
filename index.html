@@ -38,6 +38,36 @@
     <a href="Inyart_Haley_CV3.pdf" target="_blank" class="View CV">View CV</a>
         <p><a href="mailto:haleyclancyinyart@gmail.com">haleyclancyinyart@gmail.com</a></p>
     </section>
+<!-- Lightbox container -->
+<div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="" alt="Expanded artwork">
+</div>
+
+<script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    // Open lightbox when any gallery image is clicked
+    document.querySelectorAll('.gallery img').forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+        });
+    });
+
+    // Close lightbox when clicking anywhere on the overlay
+    lightbox.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+    });
+
+    // Close lightbox with the Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            lightbox.classList.remove('active');
+        }
+    });
+</script>
     <!-- Footer -->
     <footer>
     <a href="https://www.instagram.com/hales_ci/" target="_blank">

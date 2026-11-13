@@ -12,19 +12,29 @@ body {
     color: #6C9684;
 }
 
-header {
+/* Single-Row Split Header */
+header.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 20px;
     background: #f4f4f4;
     color: #6C9684;
-    text-align: center;
-    padding: 25px 0 5px 0;
 }
 
-h1 {
-    font-size: 48px;
+header.site-header h1 {
+    margin: 0;
+    text-align: left;
+    line-height: 1;
+}
+
+header.site-header h1 a {
+    font-size: 38px;
     font-weight: 600;
     color: #6C9684;
-    text-align: center;
-    margin: 0;
+    text-decoration: none;
 }
 
 h2 {
@@ -37,40 +47,49 @@ h2 {
 
 /* Navigation Styles */
 nav {
-    background-color: #f4f4f4;
-    padding: 5px 0 15px 0;
-    text-align: center;
+    background-color: transparent;
+    padding: 0;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 28px;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+    margin: 0;
 }
 
 nav ul li a {
     color: #6C9684;
     text-decoration: none;
     font-size: 26px;
+    padding-bottom: 2px;
+    border-bottom: 1.5px solid transparent;
+    transition: opacity 0.2s ease, border-color 0.2s ease;
 }
 
 nav ul li a:hover {
-    color: #6C9684;
+    opacity: 0.75;
+    border-bottom-color: #6C9684;
+}
+
+nav ul li a.active {
+    border-bottom-color: #6C9684;
 }
 
 /* Section Styling */
 section {
-    padding: 40px;
+    padding: 30px 20px 40px 20px;
     text-align: center;
 }
 
 #about, #image-gallery {
-    padding: 40px;
+    padding: 30px 20px 40px 20px;
     text-align: center;
 }
 
@@ -203,9 +222,21 @@ footer a:hover, footer a[href^="mailto:"]:hover {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    header.site-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 20px;
+    }
+
+    header.site-header h1 {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
     }
 
     .my-button {

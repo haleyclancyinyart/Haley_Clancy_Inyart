@@ -16,7 +16,7 @@ header {
     background: #f4f4f4;
     color: #6C9684;
     text-align: center;
-    padding: 20px 0;
+    padding: 25px 0 5px 0;
 }
 
 h1 {
@@ -24,6 +24,7 @@ h1 {
     font-weight: 600;
     color: #6C9684;
     text-align: center;
+    margin: 0;
 }
 
 h2 {
@@ -31,12 +32,13 @@ h2 {
     font-weight: 600;
     color: #6C9684;
     text-align: center;
+    margin: 0 0 20px 0;
 }
 
 /* Navigation Styles */
 nav {
     background-color: #f4f4f4;
-    padding: 10px 0;
+    padding: 5px 0 15px 0;
     text-align: center;
 }
 

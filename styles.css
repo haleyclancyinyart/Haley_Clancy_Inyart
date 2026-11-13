@@ -7,18 +7,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #819ECA;
+    color: #6C9684;
 }
 
 header {
     background: #f4f4f4;
-    color: #819ECA;
+    color: #6C9684;
     text-align: center;
     padding: 20px 0;
 }
 
 h1, h2 {
-    color: #819ECA;
+    color: #6C9684;
     text-align: center;
 }
 
@@ -41,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #819ECA;
+    color: #6C9684;
     text-decoration: none;
     font-size: 18px;
 }
@@ -136,7 +136,7 @@ img {
 /* Buttons */
 .my-button {
     background-color: #F5F5F5;
-    color: #333;
+    color: #6C9684;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -156,7 +156,7 @@ img {
 
 .resume-button {
     display: inline-block;
-    background-color: #333;
+    background-color: #6C9684;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -166,7 +166,7 @@ img {
 }
 
 .resume-button:hover {
-    background-color: #000;
+    background-color: #6C9684;
     transform: scale(1.05);
 }
 
@@ -184,7 +184,7 @@ footer a, a[href^="mailto:"] {
 }
 
 footer a:hover, footer a[href^="mailto:"]:hover {
-    color: #819ECA;
+    color: #6C9684;
 }
 
 /* Mobile responsiveness */

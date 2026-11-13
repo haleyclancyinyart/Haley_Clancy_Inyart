@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Caveat", cursive;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -141,7 +140,7 @@ img {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Caveat", cursive;
     font-size: 16px;
     border: none;
     border-radius: 4px;
